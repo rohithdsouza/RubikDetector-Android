@@ -108,8 +108,8 @@ Needless to say, both the allocation, and the copy are expensive operations whic
 An implementation better fitted for live processing would imply the following:
   * preallocate buffers of the size required by the RubikDetector, before camera/video frames start coming in
   * ensure the camera or video frames are written into the preallocated buffers. 
-  * send the preallocated buffers to the detector for processing
-  * once processing has been perform, reuse each preallocated buffer
+  * send the preallocated buffers to the detector for processing.
+  * once processing has been performed, reuse each preallocated buffer.
   
 In code, this means the following (Android Camera1 API):
 
